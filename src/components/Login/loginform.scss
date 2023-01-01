@@ -1,0 +1,93 @@
+@import "/src/variables.scss";
+
+.loginform {
+    margin: 2.5rem;
+    margin-left: 0;
+    max-width: 400px;
+
+    &__entry {
+        margin: 2rem 0;
+
+        >input {
+            padding: 1rem;
+            width: 100%;
+            border-color: rgba($text-color,
+                    0.15);
+            border-width: 2px;
+            border-radius: 5px;
+            font-size: 14px;
+
+            &:focus {
+                outline: none;
+                border: $sec-color 2px solid;
+            }
+        }
+
+        .password-input {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            border: 2px solid;
+            border-color: rgba($text-color,
+                    0.15);
+            border-width: 2px;
+            border-radius: 5px;
+
+            input {
+                flex: 1;
+                font-size: 14px;
+                padding: 1rem;
+                border: none;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            &:focus {
+                border: $sec-color 2px solid;
+            }
+
+            span {
+                text-transform: uppercase;
+                color: $sec-color;
+                font-weight: 600;
+                font-size: 12px;
+                margin-right: 1rem;
+                cursor: pointer;
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+
+        color: #39CDCC;
+    }
+
+    button {
+        margin-top: 2rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        font-size: 1rem;
+        color: #FFFFFF;
+        padding: 1rem;
+        width: 100%;
+        border: none;
+        border-radius: 8px;
+        background-color: $sec-color;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba($sec-color, 0.8);
+        }
+    }
+
+
+
+}
