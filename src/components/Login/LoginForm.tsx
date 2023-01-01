@@ -1,11 +1,12 @@
 import React from 'react';
 import "./loginform.scss"
 
-export const LoginForm = () => {
+export const LoginForm = ({authenticateUser}:any) => {
   const [showPassword, setShowPassword] = React.useState(false)
   return (
     <form className="loginform" method='post' onSubmit={(e) => {
       e.preventDefault();
+      authenticateUser(true)
     }}>
       <div className="loginform__entry">
         <label htmlFor="email"></label>
