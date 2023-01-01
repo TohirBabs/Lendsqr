@@ -1,0 +1,21 @@
+.navbar {
+    display: flex;
+    padding: 1rem;
+    width: 100vw;
+    box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+
+    .logo {
+        flex: 2;
+        width: 300px;
+    }
+
+    .search {
+        flex: 4;
+        display: flex;
+    }
+
+    .menu {
+        flex: 2;
+        list-style: none;
+    }
+}
