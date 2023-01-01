@@ -1,21 +1,135 @@
+@import "/src/variables.scss";
+
 .navbar {
     display: flex;
-    padding: 1rem;
+    align-items: center;
+    padding: 1rem 1.2rem;
     width: 100vw;
     box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
 
+    @media (max-width: 500px) {
+        padding: 0.5rem;
+
+    }
+
+    .menuicon {
+        display: none;
+
+        @media (max-width: 500px) {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            padding: 0 1rem;
+
+            div {
+                width: 1.8rem;
+                height: 3px;
+                background-color: $pry-color;
+            }
+
+        }
+    }
+
     .logo {
+        display: flex;
+        align-items: center;
         flex: 2;
         width: 300px;
+        margin-left: 2rem;
+
+        @media (max-width: 500px) {
+            flex: 5;
+            margin-left: 1rem;
+
+        }
+
     }
 
     .search {
         flex: 4;
-        display: flex;
+
+        @media (max-width: 500px) {
+            display: none;
+        }
+
+
+        &-box {
+            border: 1px solid $sec-color;
+            display: flex;
+            align-items: center;
+            border-radius: 8px;
+            width: max-content;
+
+            input {
+                border: none;
+                height: 2.8rem;
+                width: 25rem;
+                border-radius: 8px;
+                font-size: 14px;
+                padding-left: 1rem;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            button {
+                background-color: $sec-color;
+                height: 100%;
+                padding: 0 1.5rem;
+                border: none;
+                height: 2.8rem;
+                border-radius: 0 6px 6px 0;
+            }
+        }
+
+
     }
 
     .menu {
         flex: 2;
         list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+
+        @media (max-width: 500px) {
+            gap: 1rem;
+        }
+
+        a {
+            text-transform: capitalize;
+            color: $pry-color;
+        }
+
+        .notification {
+            cursor: pointer;
+        }
+
+        .user-profile {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            cursor: pointer;
+
+            img {
+                border-radius: 3rem;
+                width: 3rem;
+                border: 2px solid white;
+
+                &:hover {
+                    border: 2px solid $sec-color;
+                }
+            }
+
+            @media (max-width: 500px) {
+                gap: 0.2rem;
+
+                p {
+                    display: none;
+                }
+
+            }
+        }
     }
 }

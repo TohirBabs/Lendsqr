@@ -1,7 +1,10 @@
 import React from 'react'
+import {DashboardLayout} from "../../components/Dashboard/Layout/DashboardLayout/DashboardLayout"
 
 export const DashboardPage = () => {
   return (
-    <div>Dashboard</div>
+    <DashboardLayout>
+body
+    </DashboardLayout>
   )
 }
