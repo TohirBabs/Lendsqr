@@ -4,10 +4,14 @@ import { SearchIcon } from './SearchIcon'
 import { Logo } from './Logo'
 import './navbar.scss'
 
-export const Navbar = () => {
+export const Navbar = ({sideNav, setsideNav}:any) => {
   return (
       <header className='navbar'>
-          <div className="menuicon">
+          <div className="menuicon" onClick={() => {
+              sideNav === "open" ? setsideNav("close") : setsideNav("open"); console.log(sideNav);
+              
+              
+          }}>
               <div></div>
               <div></div>
               <div></div>

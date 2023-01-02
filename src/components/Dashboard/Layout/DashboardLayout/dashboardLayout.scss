@@ -1,7 +1,7 @@
 .body {
     @media (max-width:500px) {
         position: relative;
-
+        left: -230px;
 
         @keyframes slideout {
             0% {
@@ -23,11 +23,11 @@
             }
         }
 
-        &.sidenav-open {
+        &.open {
             animation: slideout 1s ease-out both;
         }
 
-        &.sidenav-close {
+        &.close {
             animation: slidein 1s ease-in both;
         }
     }
