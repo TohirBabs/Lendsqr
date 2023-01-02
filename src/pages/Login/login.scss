@@ -9,10 +9,10 @@
 
         .logo {
             position: absolute;
-            margin: 10vh;
+            margin: 2rem;
 
             @media (max-width:500px) {
-                margin: 10vw;
+                margin: 1rem;
             }
         }
     }
