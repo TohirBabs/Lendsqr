@@ -1,0 +1,34 @@
+.body {
+    @media (max-width:500px) {
+        position: relative;
+
+
+        @keyframes slideout {
+            0% {
+                left: -230px;
+            }
+
+            100% {
+                left: 0;
+            }
+        }
+
+        @keyframes slidein {
+            0% {
+                left: 0;
+            }
+
+            100% {
+                left: -230px;
+            }
+        }
+
+        &.sidenav-open {
+            animation: slideout 1s ease-out both;
+        }
+
+        &.sidenav-close {
+            animation: slidein 1s ease-in both;
+        }
+    }
+}

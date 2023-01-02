@@ -4,7 +4,7 @@ import {DashboardLayout} from "../../components/Dashboard/Layout/DashboardLayout
 export const DashboardPage = () => {
   return (
     <DashboardLayout>
-body
+
     </DashboardLayout>
   )
 }
