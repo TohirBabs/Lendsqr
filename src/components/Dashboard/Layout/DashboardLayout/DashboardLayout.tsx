@@ -7,7 +7,7 @@ export const DashboardLayout = ({ children }: any) => {
     const [sideNav, setsideNav] = React.useState("")
     
   return (
-      <div><Navbar sideNav={sideNav} setsideNav={setsideNav}  />
+      <div className='dashboard-layout'><Navbar sideNav={sideNav} setsideNav={setsideNav}  />
           <div className={`body ${sideNav}`}>
           <Sidebar />
               {children}

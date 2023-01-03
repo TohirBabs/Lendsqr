@@ -1,0 +1,13 @@
+.users {
+    width: 100vw;
+    background-color: red;
+    color: white;
+    height: calc(100vh - 61px);
+    overflow-y: scroll;
+
+    @media (max-width: 500px) {
+        font-size: 0.8rem;
+        height: calc(100vh - 64px);
+
+    }
+}
