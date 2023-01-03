@@ -1,6 +1,9 @@
+@import "/src/variables.scss";
+
 .dashboard-layout {
     height: 100vh;
     overflow: hidden;
+    color: $pry-color;
 
     .body {
         display: flex;
