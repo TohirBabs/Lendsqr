@@ -34,11 +34,11 @@
             }
 
             &.open {
-                animation: slideout 0.4s ease-out both;
+                animation: slideout 0.3s ease-out both;
             }
 
             &.close {
-                animation: slidein 0.4s ease-in both;
+                animation: slidein 0.3s ease-in both;
             }
         }
     }
