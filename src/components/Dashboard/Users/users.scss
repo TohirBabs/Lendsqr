@@ -4,19 +4,26 @@
     height: calc(100vh - 61px);
     overflow-y: scroll;
     padding-right: 0;
+    padding-bottom: 6rem;
 
     @media (max-width: 500px) {
+        width: 100vw;
         font-size: 0.8rem;
         height: calc(100vh - 64px);
-        padding: 1rem;
+
 
     }
 
     h2 {
         font-weight: 500;
         font-size: 24px;
-        padding: 1rem;
-        margin: 2rem;
+        padding: 2rem;
+        padding-bottom: 0;
+
+        @media (max-width:620px) {
+            padding: 0.4rem;
+            margin: 0.8rem;
+        }
     }
 
     &__infocards {
@@ -24,7 +31,7 @@
         justify-content: space-between;
         gap: 0.8rem;
         max-width: 1200px;
-        margin: 2rem;
+        padding: 2rem;
         overflow-x: scroll;
 
         scrollbar-width: none;
@@ -35,8 +42,8 @@
         }
 
         @media (max-width:620px) {
-
-            width: calc(100vw)
+            max-width: 1000px;
+            padding: 0.8rem 0.6rem;
         }
 
 
