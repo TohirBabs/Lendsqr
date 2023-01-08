@@ -29,7 +29,7 @@ export const UsersData = ({data}:any) => {
       <header>
       {dataHeaders.map((header) => (<div className='header__item'><p>{ header}</p><FilterIcon/></div>))}
     </header>
-      {data? data.map((dataEntry:any) => (<UsersDataEntry dataEntry={dataEntry}/>)): null}
+      {data? data.slice(0,10).map((dataEntry:any) => (<UsersDataEntry dataEntry={dataEntry}/>)): null}
          
 </div>    </div>
     
